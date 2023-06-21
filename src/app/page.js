@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Banner from './componetes/Banner/banner'
+import Banner from './componetes/Banner/Banner'
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
     <Banner/>
       <div className={styles.description}>
         <p>
-          Inicie editando pelo caminho&nbsp;
+          Inicie editando pelo caminho (noteboo)&nbsp;
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>
