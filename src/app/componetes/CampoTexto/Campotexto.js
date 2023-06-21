@@ -1,3 +1,4 @@
+import "./Campotexto.css"
 // funciona a mesma coisa que o banner, a escolha e sua.
 export const CampoTexto = ()=>{
    return(
