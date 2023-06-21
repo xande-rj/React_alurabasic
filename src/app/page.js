@@ -1,9 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 import Banner from './componetes/Banner/Banner'
+import CampoTexto from './componetes/CampoTexto/Campotexto'
 
 export default function Home() {
   return (
+    <div>
     <Banner/>
+    <CampoTexto/>
+    </div>
   )
 }
