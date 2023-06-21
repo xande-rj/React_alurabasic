@@ -1,7 +1,7 @@
 .Formulario{
     display: flex;
     justify-content: center;
-    margin: 80px 0 ;
+    margin: 30px 0;
 }
 
 .Formulario form{
@@ -10,5 +10,4 @@
     border-radius: 20px;
     padding: 36px 64px;
     box-shadow: 7px 7px 15px rgb(0, 0, 0,0.08);
-
 }
