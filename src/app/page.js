@@ -8,7 +8,7 @@ export default function Home() {
     <Banner/>
       <div className={styles.description}>
         <p>
-          Inicie editando pelo caminho (noteboo)&nbsp;
+          Inicie editando pelo caminho (notebook)&nbsp;
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>
