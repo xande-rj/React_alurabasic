@@ -1,10 +1,10 @@
 // funciona a mesma coisa que o banner, a escolha e sua.
 export const CampoTexto = ()=>{
    return(
-   <div>
+   <div className="campo-texto">
         <label>
             Nome 
-            <input/>
+            <input placeholder="Digite seu nome"/>
         </label>
     </div>
    )
