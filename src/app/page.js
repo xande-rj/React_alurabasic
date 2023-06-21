@@ -1,5 +1,5 @@
-import Banner from './componetes/Banner/Banner'
-import CampoTexto from './componetes/CampoTexto/Campotexto'
+import Banner from './componetes/Banner'
+import CampoTexto from './componetes/CampoTexto'
 
 export default function Home() {
   return (

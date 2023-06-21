@@ -1,5 +1,5 @@
 // funciona a mesma coisa que o banner, a escolha e sua.
-const CampoTexto = ()=>{
+export const CampoTexto = ()=>{
    return(
    <div>
         <label>
@@ -10,4 +10,3 @@ const CampoTexto = ()=>{
    )
 }
 
-export default CampoTexto
