@@ -1,4 +1,6 @@
-
+.campo-texto{
+    margin: 24px;
+}
 .campo-texto label{
     display: block;
     margin-bottom: 8px;
