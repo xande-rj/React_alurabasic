@@ -10,7 +10,7 @@ export const CampoTexto = (props)=>{
         <label>
             {props.label}
         </label>
-        <input placeholder = {propsModificado}/>
+        <input required={props.obrigatorio} placeholder = {propsModificado}/>
     </div>
    )
 }
