@@ -55,7 +55,14 @@ export default function Home() {
     <div>
     <Banner/>
     <Formulario times= {times.map(time => time.nome)} ColaboradorCadastrado = {colaborador =>NovoColaboradorAdicionado(colaborador)}/>
-    {times.map(time => <Times key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>)}
+    {times.map(time => 
+    <Times 
+    key={time.nome} 
+    nome={time.nome} 
+    corPrimaria={time.corPrimaria} 
+    corSecundaria={time.corSecundaria}
+    colaboradores={colaboradores.filter(colaborador =>colaborador.time === time.nome)}
+    />)}
     </div>
   );
 }

@@ -8,9 +8,9 @@ const Times = (props) =>{
     return(
         <section className="times" style={{backgroundColor: props.corSecundaria}}>
             <h3 style={css}>{props.nome}</h3>
-            <Colaboradores/>
-            <Colaboradores/>
-
+            <div className="colaboradores">
+                {props.colaboradores.map(colaborador => <Colaboradores nome ={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem}/>)}
+            </div>
         </section>
     )
 }
