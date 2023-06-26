@@ -7,15 +7,6 @@ import ListaSuspensa from "../Listasuspensa"
 import "./Formulario.css"
 function Formulario (props){
 
-    const times = [
-        'Data science',
-        'Devoups',
-        'UX e Design',
-        'Programação',
-        'Inovação',
-        'Front-End',
-    ]
-
     const aoSalvar = (evento) => {
         evento.preventDefault()
         props.ColaboradorCadastrado({
@@ -57,14 +48,14 @@ function Formulario (props){
             <ListaSuspensa 
             obrigatorio ={true} 
             label="Times" 
-            itens={times}   
+            itens={props.times}   
             valor={time}
             aoAlterado={valor => Settime(valor)} 
             />
             <Botao>
                 Criar Card
             </Botao>
-            </form>
+            </form> 
         </section>
     )
 }
