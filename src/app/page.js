@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Banner from './componetes/Banner'
 import Formulario from './componetes/Formulario/Formulario'
 import Times from './componetes/Times';
+import Rodape from './componetes/Rodape';
 
 export default function Home() {
 
@@ -55,14 +56,19 @@ export default function Home() {
     <div>
     <Banner/>
     <Formulario times= {times.map(time => time.nome)} ColaboradorCadastrado = {colaborador =>NovoColaboradorAdicionado(colaborador)}/>
-    {times.map(time => 
+    {
+    times.map(time => 
     <Times 
     key={time.nome} 
     nome={time.nome} 
     corPrimaria={time.corPrimaria} 
     corSecundaria={time.corSecundaria}
     colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-    />)}
+    />
+    )
+    }
+    <Rodape/>
+
     </div>
   );
 }

@@ -8,7 +8,7 @@ const Times = (props) => {
 
     
     return(
-        CountColaboradores &&
+        CountColaboradores > 0 &&
         <section className="times" style={{backgroundColor: props.corSecundaria}}>
             <h3 style={css}>{props.nome}</h3>
             <div className="colaboradores">
