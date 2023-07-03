@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Botao from '../Botao'
-import CampoTexto from '../CampoTexto'
+import Campo from '../Campo'
 import ListaSuspensa from '../ListaSuspensa'
 import './formulario.css'
 
@@ -27,19 +27,22 @@ const Formulario = ({aoCadastrar, times, CadastraTime}) => {
         <section className="formulario-container">
             <form className="formulario" onSubmit={aoSubmeter}>
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
-                <CampoTexto
+                <Campo
+                    type='text'
                     obrigatorio={true}
                     label='Nome'
                     placeholder='Digite seu nome '
                     valor={nome}
                     aoAlterado={valor => setNome(valor)}/>
-                <CampoTexto
+                <Campo
+                    type='text'
                     obrigatorio={true}
                     label='Cargo' 
                     placeholder='Digite seu cargo '
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}/>
-                <CampoTexto 
+                <Campo 
+                    type='text'
                     label='Imagem' 
                     placeholder='Informe o endereço da imagem '
                     aoAlterado={valor => setImagem(valor)}/>
@@ -57,14 +60,16 @@ const Formulario = ({aoCadastrar, times, CadastraTime}) => {
                 CadastraTime({nome: NomeTime, cor:CorTime})
             }}>
                 <h2>Preencha os dados para criar Um novo Time</h2>
-                <CampoTexto
+                <Campo
                     obrigatorio
+                    type='text'
                     label='Nome'
                     placeholder='Digite o Novo Time '
                     valor={NomeTime}
                     aoAlterado={valor => setNomeTime(valor)}/>
-                <CampoTexto
+                <Campo
                     obrigatorio
+                    type='color'
                     label='Cor' 
                     placeholder='Escolha a Cor'
                     valor={CorTime}
